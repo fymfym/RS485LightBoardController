@@ -1,0 +1,5 @@
+C:\git\RS485LightBoardController\RS485Light\bin\Debug\netcoreapp2.0\RS485Light.deps.json
+C:\git\RS485LightBoardController\RS485Light\bin\Debug\netcoreapp2.0\RS485Light.dll
+C:\git\RS485LightBoardController\RS485Light\obj\Debug\netcoreapp2.0\RS485Light.csproj.CoreCompileInputs.cache
+C:\git\RS485LightBoardController\RS485Light\obj\Debug\netcoreapp2.0\RS485Light.AssemblyInfoInputs.cache
+C:\git\RS485LightBoardController\RS485Light\obj\Debug\netcoreapp2.0\RS485Light.AssemblyInfo.cs

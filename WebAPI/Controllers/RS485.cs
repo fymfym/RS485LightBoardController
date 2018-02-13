@@ -18,9 +18,11 @@ namespace WebAPI.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromQuery]int Address, [FromQuery] int Intensity, [FromQuery] int Data)
+        public IActionResult Post([FromQuery] string Base64EncodedDataPackage)
         {
-
+            if (Base64EncodedDataPackage == null) return BadRequest();
+            var dataPackage = System.Convert.FromBase64String(Base64EncodedDataPackage);
+            return Ok();
         }
     }
 }
