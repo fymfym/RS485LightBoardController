@@ -1,19 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.IO.Ports;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
 
 namespace WebAPI
 {
     public class Program
     {
+        public static System.IO.Ports.SerialPort _port;
+
         public static void Main(string[] args)
         {
+            _port = new SerialPort();
+            _port.BaudRate = 115000;
+            _port.DataBits = 8;
+            _port.StopBits = StopBits.One;
+
             BuildWebHost(args).Run();
         }
 
